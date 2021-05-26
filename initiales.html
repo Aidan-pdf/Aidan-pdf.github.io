@@ -1,1 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Challenge:Initiales </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <input id= "prenom" placeholder = "Prenom"/> <br>
+    <input id= "nom" placeholder = "Nom du milieu"/> <br>
+    <input id= "nomfam" placeholder = "Nom de famille"/> <br>
+    <input type= "button" onclick ="initiales()" value="Afiche les initiales">
+    <input type= "button" onclick ="nom()" value="Afiche le nom">
+    <input type= "button" onclick ="nomutilisateur()" value="Afiche le nom d'utilisateur">
+<div id="divAffiche">
+     </div>
+    <script>
+function initiales(){
+var prenom =document.getElementById("prenom").value
+var nom =document.getElementById("nom").value
+var nomfam =document.getElementById("nomfam").value
+var display1 ="Initiales: " +(prenom[0]).toUpperCase() + ". " + (nom[0]).toUpperCase() + ". " + (nomfam[0]).toUpperCase() + "."
+var affiche = document.getElementById("divAffiche");
+
+affiche.innerHTML = display1
+}
+function nom(){
+var prenom =document.getElementById("prenom").value
+var nom =document.getElementById("nom").value
+var nomfam =document.getElementById("nomfam").value
+var display2 ="Nom complet: " + prenom + " " + nom + " " + nomfam
+var affiche = document.getElementById("divAffiche");
+
+affiche.innerHTML = display2
+}
+function nomutilisateur(){
+var prenom =document.getElementById("prenom").value
+var nom =document.getElementById("nom").value
+var nomfam =document.getElementById("nomfam").value
+var display3 ="Nom d'utilisateur: " + prenom[0].toLowerCase() + (nom[0]).toLowerCase() + nomfam.toLowerCase()
+var affiche = document.getElementById("divAffiche");
+
+affiche.innerHTML = display3
+}
+</script>
+
+
+    </body>
+</html>
 
