@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Challenge:Initiales 2.0 </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <p>
+      &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 Numérateur &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 Denominateur
+    </p>
+    <input id= "number1" />
+    /
+    <input id= "number2" />
+    <input type= "button" onclick ="hopethisworks()" value="Reste:">
+<div id="divAffiche">
+ 
+     </div>
+    <script>
+function hopethisworks(){
+var numerateur =document.getElementById("number1").value
+var  denominateur =document.getElementById("number2").value
+var divi = numerateur / denominateur
+var entier = Math.floor(divi)
+var restefinal =numerateur - entier*denominateur
+var affiche = document.getElementById("divAffiche");
+
+affiche.innerHTML = restefinal
+}
+</script>
+
+
+    </body>
+</html>
